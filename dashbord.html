@@ -3,15 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="Description" content="main">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="dashbord.css">
   </head>
 
-  <body>
+  <body id="body">
+    
     <main id="container" class="main"> 
       <section id="top" class="topContainer">
         <span id="time" class="time">Loading...</span>
+         
       </section>
-      
+      <section class = "title_container">
+        <p class = "title">Wakanas DashBord</p>
+      </section>
       <section id="center" class="center_Container">
   
         <div class="main_contents">
@@ -30,11 +35,11 @@
       </section>
 
       <section id="down" class="down_Container">
-
+        <span id="screen" class="screen"><i class="fa-solid fa-rotate-right"></i>random BackGround</span>
       </section> 
     </main> 
 
-    <footer class="footContainer" id="footer"></footer>
     <script src=".//script/time.js"></script>
+    <script src=".//script/randomPic.js"></script>
   </body>
 </html>
