@@ -8,8 +8,7 @@ var urls = [
   'url(./img/6.jpg)',
   'url(./img/7.jpg)',
   'url(./img/8.jpg)',
-  'url(./img/9.jpg)',
-  'url(./img/10.jpg)',
+  'url(./img/9.jpg)'
 ];
 
 
