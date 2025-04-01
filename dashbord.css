@@ -86,10 +86,7 @@ body {
   text-align: center;
 
 }
-.sub{
- font-size: 20px;
 
-}
 
 .add_link {
   font-size: 18px;
@@ -140,16 +137,15 @@ body {
 input{
   display: inline-block;
   width: 100%;
-  /*コレ*/padding: 1em 0.5em;
-  /*コレ*/line-height: 1;
+  padding: 1em 0.5em;
+  line-height: 1;
   border: none;
   box-sizing: border-box;
   background: #f2f2f2;
   margin: 0.5em 0;
 }
 button{
-    /*コレ*/border: none;
-
+    border: none;
     background: #ef12cb;
     color: #FFF;
     cursor: pointer;
@@ -187,6 +183,13 @@ button{
   width:70%;
   height:40%;
   border-radius: 10%;
+}
+
+.text_title{
+ 
+  font-weight: bold;
+  
+
 }
 
 /* 画面サイズが小さいときのレスポンシブ調整 */
