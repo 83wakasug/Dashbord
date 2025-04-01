@@ -21,6 +21,7 @@ function displayNews(articles) {
         <h4>${article.title}</h4>
       </a>
       <p>${article.description || "No description available"}</p>
+      <img class="new_image" src=${article.urlToImage} alt="Italian Trulli">
     `;
     newsContainer.appendChild(newsItem);
   });
