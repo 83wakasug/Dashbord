@@ -104,25 +104,27 @@ function saveObject(name, url, icon) {
 
 // Function to create and display a link element on the page
 function createLink(name, url, favicon) {
-    try{
-        let div = createDiv(); // Create a new div for the link
-        let span = document.createElement('span'); // Create a new span element to contain the link
-        span.innerHTML = `
+  try {
+      let div = createDiv(); // Create a new div for the link
+      let span = document.createElement('span'); // Create a new span element to contain the link
+      span.innerHTML = `
+      <div class="link_wrapper"> 
         <table class="link_table">
           <tr>
-            <td class="link_cell"><img height="30" width="30" src="${favicon}" /> </td>
+            <td class="link_cell"><img height="30" width="30" src="${favicon}" /></td>
             <td class="link_cell"><a href="${url.startsWith('http') ? url : 'https://' + url}" target="_blank">${name}</a></td>
-            <td class = "link_cell"><i  class="fa-regular fa-circle-xmark delete_icon"></i></td>
+            <td class="link_cell"><i class="fa-regular fa-circle-xmark delete_icon"></i></td>
           </tr>
-        </table>`; // Set the link and favicon image
-        div.appendChild(span); // Append the span to the div
+        </table>
+      </div> `; // Set the link and favicon image
+      div.appendChild(span); // Append the span to the div
 
-        // Append the new link div to the link contents section on the page
-        document.querySelector(".link_contents").appendChild(div);
-        span.querySelector(".delete_icon").addEventListener('click', () => deletelink(url));
-    }catch(e){
-        console.log(e);
-    }
+      // Append the new link div to the link contents section on the page
+      document.querySelector(".link_contents").appendChild(div);
+      span.querySelector(".delete_icon").addEventListener('click', () => deletelink(url));
+  } catch (e) {
+      console.log(e);
+  }
 }
 
 // Function to load and display all saved links from the link array

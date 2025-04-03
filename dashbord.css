@@ -51,8 +51,8 @@ body {
   margin:10px;
   font-size: 20px;
   font-weight: bold;
-  text-align: center; /* テキストを中央揃え */
-  margin: 0; /* 必要に応じて余白を調整 */
+  text-align: center; 
+  margin: 0; 
 }
 
 .title_container{
@@ -89,12 +89,12 @@ body {
 
 
 .add_link {
-  font-size: 18px;
+  font-size: 16px;
   margin: 20px;
-  background-color: rgb(225, 225, 225);
-  padding: 10px; /* 内側の余白を設定 */
-  border-radius: 20px; /* 必要に応じて角を丸める */
-  display: inline-block; /* 要素をブロックレベルにする */
+  background-color: rgba(255, 255, 255, 0.71);
+  padding: 10px; 
+  border-radius: 20px; 
+  display: inline-block; 
  
 }
 
@@ -110,15 +110,15 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* 画面中央に固定 */
+  transform: translate(-50%, -50%); 
   width: 40%;
-  max-width: 90%; /* 画面幅の90%を超えない */
+  max-width: 90%; 
   height: auto;
-  max-height: 80vh; /* 画面の80%を超えない */
+  max-height: 80vh; 
   padding: 20px;
-  border-radius: 10px; /* 角を丸く */
+  border-radius: 10px; 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  overflow: auto; /* 内容が多い時にスクロール可能 */
+  overflow: auto; 
 }
 
 .link_form {
@@ -164,6 +164,7 @@ button{
   text-align: left;
 }
 
+
 #add_news {
   max-height: 50vh; 
   overflow-y: auto;  
@@ -204,6 +205,28 @@ button{
   transition: all 0.3s ease;
 }
 
+.link_contents {
+  max-height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+}
+
+.link_wrapper {
+  width: 60%; 
+  max-width: 500px; 
+  padding: 1.8%;
+  background-color: rgba(255, 255, 255, 0.349); 
+  border-radius: 10px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  margin: 10px auto; 
+}
 @media screen and (max-width: 768px) {
 
 
