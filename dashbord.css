@@ -192,11 +192,146 @@ button{
 
 }
 
-/* 画面サイズが小さいときのレスポンシブ調整 */
-@media screen and (max-width: 600px) {
-  .div_dialog {
-    width: 80%;
-    max-width: 90%;
-    height: auto;
+.down_Container:hover {
+  background-color: #e0e4ff; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add_link:hover {
+  background-color: rgb(200, 200, 200);
+  transform: scale(1.05); 
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-size: 2vw;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .main {
+    flex-grow: 1;
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+  .title_container {
+    margin: 3vh 0;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+
+
+  .center_Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+
+  .main_contents {
+    background-color: #f2f4ffaf;
+    border-radius: 5vw;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh;
+    flex-grow: 1;
+    max-height: 25vh; 
+    overflow: hidden; 
+  }
+
+  .link_contents {
+    max-height: 100px; 
+  }
+  .add_link {
+    font-size: 3vw;
+    padding: 6px;
+    width: 95%;
+  }
+.icon-x{
+      font-size: 3vw;
+}
+
+
+  #add_weather,
+  #add_news,
+  .link_contents {
+    height: 20vh; 
+    overflow-y: auto; 
+    padding: 1vh;
+  }
+
+
+  #add_text {
+    flex-grow: 1.2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea {
+    flex-grow: 1;
+    width: 100%;
+    height: 15vh;
+    resize: none;
+    font-size: 2vw;
+  }
+
+
+  .down_Container {
+    width: 100%;
+    height: 3vh;
+    background-color: #f2f4ff8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vw;
+    margin-top: 1vw; 
+    
+  }
+
+
+  .screen {
+    font-size: 2.5vw;
+    padding: 1vh 2vw;
   }
 }
+
+
+
+
+
