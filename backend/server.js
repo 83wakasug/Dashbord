@@ -1,3 +1,5 @@
+//start server with node server.js
+
 require('dotenv').config(); 
 
 const WEATHER_API_KEY=process.env.WEATHER_API_KEY;
@@ -6,8 +8,7 @@ const NEWS_API_KEY = process.env.NEWS_API_KEY;
 
 
 
-console.log(`weather: ${WEATHER_API_KEY}`);
-console.log(`news: ${NEWS_API_KEY}`);
+
 const fs = require('fs')
 const express = require('express');
 const cors = require('cors');
