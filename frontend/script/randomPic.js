@@ -15,7 +15,7 @@ var urls = [
 
 
 
-function myFunction(){
+function changeImage(){
   try{ 
     
     var active = Math.floor(Math.random() * (urls.length));
@@ -27,4 +27,4 @@ function myFunction(){
  
 }
 
-document.getElementById('screen').addEventListener('click',myFunction);
+document.getElementById('screen').addEventListener('click',changeImage);
