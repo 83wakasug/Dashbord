@@ -1,4 +1,4 @@
-const key = "964303efb75b4e2aa94fec658d29d853";
+const key = "";
 const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${key}`;
 
 fetch(url)

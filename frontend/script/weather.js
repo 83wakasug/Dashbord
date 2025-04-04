@@ -1,5 +1,5 @@
 const x = document.getElementById("demo");
-const APIkey = "d05879dfc4d456867026bc432442b474";
+
 
 document.addEventListener("DOMContentLoaded", function () {
   try { 
