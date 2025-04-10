@@ -7,7 +7,7 @@
 
 html {
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto; /* Centers the page horizontally */
 }
 
@@ -32,6 +32,8 @@ body {
 
   
 }
+
+
 
 .topContainer,.down_Container {
   display: flex;
@@ -355,6 +357,72 @@ button{
 }
 
 
+@media screen and (max-width: 400px) {
+  html {
+    max-width: 100%;
+  }
 
+  .title {
+    font-size: 6vw;
+  }
+
+  .main {
+    padding: 1vh 4vw;
+  }
+
+  .center_Container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    width: 100% !important;
+    gap: 1vh;
+  }
+
+  .main_contents {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+  .add_link {
+    font-size: 4vw;
+    padding: 8px;
+    width: 100%;
+  
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.71);
+    padding: 10px; 
+    border-radius: 10px; 
+    display: inline-block; 
+  }
+
+  .link_contents {
+    max-height: 120px;
+  }
+
+  .down_Container {
+    height: 5vh;
+    border-radius: 6vw;
+  }
+
+  textarea {
+    font-size: 3.5vw;
+    height: 20vh;
+  }
+
+  .screen {
+    font-size: 3.5vw;
+  }
+
+  .icon-x {
+    font-size: 5vw;
+  }
+
+  .add_link {
+    font-size: 2.5vw; 
+    padding: 6px 10px; 
+    border-radius: 10px;
+    width: auto;
+  }
+}
 
 
